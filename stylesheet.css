@@ -1,0 +1,39 @@
+* {margin: 0;padding: 0; font: 14px/17px "Trebuchet MS", Tahoma, Arial}
+p {padding: 10px;}
+#header {height: 80px; background: #DFDFDF; text-align: center;}
+#text {background: #D5FFD5;}
+#left {background: white;}
+#right {background: #BFF2FF;}
+#footer {height: 80px; background: #FFCACA;}
+.clear {clear: both;}
+
+
+/* код для разметки 3-х колонок */
+#wrapper {
+  width: 100%;
+  width: expression((documentElement.clientWidth||document.body.clientWidth)<995?'1000px':'');
+  min-width: 1000px;
+}
+
+#container {width: 100%;}
+#content {
+  width: 100%;
+  float: left;
+}
+
+#header {
+  float: left;
+}
+
+#text {margin: 0 250px;}
+#left {
+  float: left;
+  width: 250px;
+  margin-left: -100%;
+}
+
+#right {
+  float: left;
+  width: 250px;
+  margin-left: -250px;
+}
